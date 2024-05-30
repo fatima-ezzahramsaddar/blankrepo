@@ -12,23 +12,21 @@
             "@wdio/globals/types",
             "expect-webdriverio",
             "@wdio/mocha-framework",
-            "@wdio/visual-service",
-            "@wdio/sync",
-            "@wdio/types"
+            "@wdio/visual-service"
         ],
         "skipLibCheck": true,
+        "noEmit": true,
         "allowImportingTsExtensions": true,
-        "noEmit": true,        
         "resolveJsonModule": true,
         "isolatedModules": true,
         "strict": true,
-        "noImplicitAny": false,
-        "strictPropertyInitialization": false,
-       "strictNullChecks": false,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "noFallthroughCasesInSwitch": true,
-        "outDir": "dist",
+        "noFallthroughCasesInSwitch": true
     },
-    "include":["./test/**/*.ts"]
+    "include": [
+        "./test/**/*.ts",
+        "test",
+        "wdio.conf.ts"
+    ]
 }
