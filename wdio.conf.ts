@@ -1,4 +1,4 @@
-import type { Options } from '@wdio/types'
+import type { Options, Reporters } from '@wdio/types'
 import VideoReporter from 'wdio-video-reporter';
 import { join } from 'node:path';
 
